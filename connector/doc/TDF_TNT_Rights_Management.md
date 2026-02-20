@@ -15,7 +15,8 @@ Its goal is to manage the DMS permissions of multiple groups of users. This incl
 | Range                | Key Features                                                                           | Based on   | System Impact                       |
 |----------------------|--------------------------------------------------------------------------------------- |------------|-------------------------------------|
 | 1.0.0.x [Obsolete]   | Initial version.                                                                       | -          | -                                   |
-| 1.0.1.x [SLC Main]   | Assign rights directly.<br>Group Profiles table only allows existing DMS user groups. | 1.0.0.5    | Loss of Group Profiles table data.  |
+| 1.0.1.x              | Assign rights directly.<br>Group Profiles table only allows existing DMS user groups. | 1.0.0.5    | Loss of Group Profiles table data.  |
+| 1.0.2.x [SLC Main]   | Increased security groups columns number to 80 groups.                                 | 1.0.1.2    |  -                                  |
 
 ### System Info
 
@@ -23,6 +24,7 @@ Its goal is to manage the DMS permissions of multiple groups of users. This incl
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
