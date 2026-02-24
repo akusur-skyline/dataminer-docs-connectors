@@ -5,7 +5,7 @@ uid: Connector_help_Rohde_Schwarz_FPL_1003_Technical
 
 # Rohde Schwarz FPL1003
 
-The Rohde Schwarz FPL1003 is a compact spectrum analyzer with the functionality of high-end instruments. It operates at frequencies from 5 kHz to 3 GHz and can analyze signals with an analysis bandwidth of 12.8 MHz (standard) or 40 MHz (with option), with an optional tracking generator available up to 3 GHz. This connector communicates with the spectrum analyzer using serial communication (TCP/IP).
+The Rohde Schwarz FPL1003 is a compact spectrum analyzer with the functionality of high-end instruments. It operates at frequencies from 5 kHz to 3 GHz and can analyze signals with an analysis bandwidth of 12.8 MHz (standard) or 40 MHz (with option), with an optional tracking generator available up to 3 GHz.
 
 ## About
 
