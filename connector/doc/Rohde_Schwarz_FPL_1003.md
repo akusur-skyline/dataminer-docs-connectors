@@ -4,45 +4,42 @@ uid: Connector_help_Rohde_Schwarz_FPL_1003
 
 # Rohde Schwarz FPL1003
 
-The Rohde Schwarz FPL1003 is a compact spectrum analyzer with the functionality of high-end instruments. It operates at frequencies from 5 kHz to 3 GHz and can analyze signals with an analysis bandwidth of 12.8 MHz (standard) or 40 MHz (with option), with an optional tracking generator available up to 3 GHz. This connector communicates with the spectrum analyzer using serial communication (TCP/IP).
-
 ## About
 
-### Version Info
+The Rohde Schwarz FPL1003 connector allows seamless integration of the FPL1003 compact spectrum analyzer into DataMiner. It provides real-time access to spectrum measurements and device information, making it easy for users to monitor, analyze, and automate RF signal workflows.
 
-| Range | Key Features                                                             | Based on | System Impact |
-|-----------|-----------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version.  | -            | -                 |
+## Key Features
 
-### Product Info
+- **Real-time spectrum analysis**: View live measurements from 5 kHz to 3 GHz directly in DataMiner.  
+- **High-bandwidth analysis**: Supports standard 12.8 MHz and optional 40 MHz analysis bandwidths.  
+- **Tracking generator support**: Optional tracking generator up to 3 GHz.  
+- **Seamless DataMiner integration**: Monitor multiple spectrum analyzers with centralized control and automation.  
+- **Element control and automation**: Easily configure and automate sweep and measurement tasks from DataMiner.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
+## Use Cases
 
-### System Info
+### RF Lab Monitoring
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+**Challenge**: Engineers need to monitor RF signals across a wide frequency range without switching between devices.  
+**Solution**: Use the connector to integrate the FPL1003 directly into DataMiner for centralized measurement.  
+**Benefit**: Saves time and reduces errors by controlling multiple instruments from a single interface.
 
-## Installation and configuration
+### Field Testing
 
-### Creation
+**Challenge**: Field engineers need portable spectrum measurements with automated workflows.  
+**Solution**: Connect the FPL1003 via TCP/IP to DataMiner for remote access and automated sweeps.  
+**Benefit**: Enables quick, reliable measurements without manual intervention.
 
-#### GPIB main connection
+### Automated Signal Analysis
 
-This connector uses a serial connection and requires the following input during element creation:
+**Challenge**: Large-scale signal monitoring requires repetitive sweeps and logging for analysis.  
+**Solution**: Use DataMiner to automate measurement sequences and retrieve results via the connector.  
+**Benefit**: Increases efficiency and ensures consistent data collection.
 
-GPIB CONNECTION:
+## Technical Reference
 
-- Interface connection:
+### Prerequisites
+- **GPIB interface**: The connector requires a working GPIB connection to the FPL1003.  
 
-  - **Device address**: The polling device address of the device.
-  - **I/O API**: The I/O API of the device.
-
-## Usage
-
-On the **Spectrum Analyzer** page, you can find the spectrum analyzer user interface. For more information on how to work with this, refer to [Working with spectrum analyzer elements](https://aka.dataminer.services/Working_with_spectrum_analyzer_elements).
-
-On the **General** page, you can find device information such as the Manufacturer, Model, Serial Number, Firmware Version and Display Status. The **DMS Spectrum Measurements** toggle button allows you to put the spectrum analyzer in automatic sweep mode.
+> [!NOTE]
+> For detailed configuration and usage instructions, refer to the [technical documentation](xref:Connector_help_Rohde_Schwarz_FPL_1003_Technical).
