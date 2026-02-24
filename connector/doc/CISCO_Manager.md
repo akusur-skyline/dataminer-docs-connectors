@@ -167,7 +167,7 @@ From version 5.1.6.x onwards, an extra connection is used to collect the Syslog 
 
 In version 5.1.9.x, the following changes are also introduced:
 
-- It is no longer possible to save Syslog messages in the database. To save your Syslog messages in the database, you will need to have an indexing database (Elastic database) and an element created based on the [Generic Syslog Receiver connector](https://catalog.dataminer.services/details/bd910005-30e6-4bd2-a785-2ae2276da985).
+- It is no longer possible to save Syslog messages in the database with this connector. To save your Syslog messages in the database, you will need to have an indexing database (Elasticsearch) and an element using the [Generic Syslog Receiver connector](https://catalog.dataminer.services/details/bd910005-30e6-4bd2-a785-2ae2276da985).
 - The **Syslog Advanced Search** page has been removed. This feature is instead available in the [Generic Syslog Receiver connector](https://catalog.dataminer.services/details/bd910005-30e6-4bd2-a785-2ae2276da985) version 1.0.3.x.
 
 ### Trunk Info page
