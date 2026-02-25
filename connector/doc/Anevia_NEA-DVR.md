@@ -4,9 +4,9 @@ uid: Connector_help_Anevia_NEA-DVR
 
 # Anevia NEA-DVR
 
-The Anevia NEA-DVR handles all the packaging, streaming and recording to prepare and deliver cloud DVR, catch-up, time-shifted and live channels to a range of targeted devices such as smartphones, tablets, personal computers and set-top boxes, according to distribution policy.
-
 ## About
+
+The Anevia NEA-DVR handles all the packaging, streaming and recording to prepare and deliver cloud DVR, catch-up, time-shifted and live channels to a range of targeted devices such as smartphones, tablets, personal computers and set-top boxes, according to distribution policy.
 
 ## Configuration
 
