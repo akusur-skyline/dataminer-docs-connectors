@@ -2331,6 +2331,9 @@
     topicUid: Connector_help_Cisco_DCNM
   - name: CISCO Firepower
     topicUid: Connector_help_CISCO_Firepower
+    items:
+    - name: CISCO Firepower Technical
+      topicUid: Connector_help_CISCO_Firepower_Technical
   - name: CISCO Firepower 2100 Series
     topicUid: Connector_help_Cisco_Firepower_2100_Series
   - name: CISCO Firepower Management Center
