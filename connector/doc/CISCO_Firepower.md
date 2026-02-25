@@ -8,7 +8,7 @@ uid: Connector_help_CISCO_Firepower
 
 This connector uses SNMP or HTTP communication in order to monitor a CISCO Firepower device. It retrieves fan statistics, monitor statistics, power supply statistics and more. It also provides an overview of how all these components are behaving. It displays the average, maximum and minimum values for specific parameters such as the fan speed and the motherboard input and output current.
 
-![Interfaces](~/connector/images/CISCO_Firepower.png)
+![Interfaces](~/connector/images/Cisco_Firepower.png)
 
 ## Key Features
 
