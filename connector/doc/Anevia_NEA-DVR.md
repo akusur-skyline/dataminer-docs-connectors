@@ -8,29 +8,6 @@ The Anevia NEA-DVR handles all the packaging, streaming and recording to prepare
 
 ## About
 
-### Version Info
-
-| Range                | Key Features         | Based on     | System Impact                      |
-|----------------------|----------------------|--------------|------------------------------------|
-| 1.0.0.x              | Initial version      | -            | -                                  |
-| 1.0.1.x			   | Outputs table added  | 1.0.0.7      | Columns removed from Assets Table  |
-| 1.0.2.x [SLC Main]   | Volatile Traps table | 1.0.1.2      | No more alarming on traps		  |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.1.x   | v4.20.4                |
-| 1.0.2.x   | v4.20.4                |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
-
 ## Configuration
 
 ### Connections
