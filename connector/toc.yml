@@ -7413,6 +7413,13 @@
     topicUid: Connector_help_OpenStack_Manager
   - name: OpenStack Manager - Project
     topicUid: Connector_help_OpenStack_Manager_-_Project
+- name: OpenSearch
+  items:
+  - name: OpenSearch Cluster Monitor
+    topicUid: Connector_help_OpenSearch_Cluster_Monitor
+    items:
+      - name: OpenSearch Cluster Monitor Technical
+        topicUid: Connector_help_OpenSearch_Cluster_Monitor_Technical
 - name: OpenTelemetry
   items:
   - name: OpenTelemetry Collector
