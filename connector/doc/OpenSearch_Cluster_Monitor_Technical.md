@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_OpenSearch_Cluster_Monitor
+uid: Connector_help_OpenSearch_Cluster_Monitor_Technical
 ---
 
 # OpenSearch Cluster Monitor
