@@ -4,9 +4,10 @@ uid: Connector_help_OpenSearch_Cluster_Monitor_Technical
 
 # OpenSearch Cluster Monitor
 
+## About
+
 The **OpenSearch Cluster Monitor** connector monitors the health of an OpenSearch cluster. It performs HTTP queries against one of the cluster nodes to collect metrics on cluster health, node statistics, index operations, JVM performance, and more.
 
-## About
 ## Configuration
 
 ### Connections
@@ -15,7 +16,7 @@ The **OpenSearch Cluster Monitor** connector monitors the health of an OpenSearc
 
 This connector uses an HTTP connection and requires the following input during element creation:
 
-- **IP address/host**: The polling IP or hostname of a cluster node. Multiple nodes can be specified using semicolons (`;`), e.g. `https://node1:9200;https://node2:9200`.
+- **IP address/host**: The polling IP or hostname of a cluster node. Multiple nodes can be specified using semicolons (";"), e.g., `https://node1:9200;https://node2:9200`.
 - **IP port**: The port of the OpenSearch or Elasticsearch node. Default: *9200*.
 
 ### Initialization
@@ -29,29 +30,25 @@ After element creation, go to the **Security** page to configure authentication 
 
 If the certificate file paths are left empty, the connector retrieves TLS certificate information directly via TLS handshake inspection on port 9200.
 
-### Redundancy
-
-No redundancy is defined for this connector.
-
 ## How to Use
 
 ### General
 
-Displays the overall cluster health retrieved from `GET /_cluster/health?level=shards`:
+The General page displays the overall cluster health retrieved from `GET /_cluster/health?level=shards`:
 
-- **Cluster Name**, **Cluster Status**, **Timed Out**
-- **Number of Nodes**, **Number of Data Nodes**
-- **Active Primary Shards**, **Active Shards**, **Relocating Shards**, **Initializing Shards**, **Unassigned Shards**, **Delayed Unassigned Shards**
-- **Number of Pending Tasks**, **Number of In-Flight Fetch Tasks**
-- **Task Max Waiting in Queue** (s), **Active Shards Percentage**
+- **Cluster Name**, **Cluster Status**, **Timed Out**.
+- **Number of Nodes**, **Number of Data Nodes**.
+- **Active Primary Shards**, **Active Shards**, **Relocating Shards**, **Initializing Shards**, **Unassigned Shards**, **Delayed Unassigned Shards**.
+- **Number of Pending Tasks**, **Number of In-Flight Fetch Tasks**.
+- **Task Max Waiting in Queue** (s), **Active Shards Percentage**.
 
 ### Cluster Stats - Nodes
 
-Contains general cluster node statistics, such as node communication statistics and JVM memory usage. A page button provides additional operating system and file system statistics aggregated at cluster level.
+This page contains general cluster node statistics, such as node communication statistics and JVM memory usage. A page button provides additional operating system and file system statistics aggregated at cluster level.
 
 ### Cluster Stats - Indices
 
-Contains general cluster index statistics, including shard and document storage counts. Page buttons lead to the following subpages:
+This page contains general cluster index statistics, including shard and document storage counts. Page buttons lead to the following subpages:
 
 - **Shards Health**: Shard-level health, including state and primary/replica designation.
 - **Indices Health**: Index-level status, number of shards and replicas, and counts of active, relocating, initializing, and unassigned shards.
@@ -59,28 +56,28 @@ Contains general cluster index statistics, including shard and document storage 
 
 ### Index Shards Level Overview
 
-Contains a tree view that provides an overview of the health status of cluster indices and their shards, based on the **Indices Health** and **Shards Health** tables.
+This page contains a tree view that provides an overview of the health status of cluster indices and their shards, based on the **Indices Health** and **Shards Health** tables.
 
 ### Index Overview
 
-Displays a table with an overview of all cluster indices, including document count, stored size, health status, and other operational information, retrieved via the index stats API.
+This page displays an overview of all cluster indices, including document count, stored size, health status, and other operational information, retrieved via the index stats API.
 
 ### Node Data
 
-Displays a table with a per-node summary retrieved from `GET /_cat/nodes`:
+This page displays a per-node summary retrieved from `GET /_cat/nodes`:
 
-- **Name**, **IP Address**
-- **Heap Usage (%)**, **RAM Usage (%)**, **CPU Load**
-- **Load Average**: 1-minute, 5-minute, and 15-minute averages
-- **Node Roles**: Master, Ingest, Coordinating Only, Remote Cluster Client, Machine Learning, Cluster Manager
+- **Name**, **IP Address**.
+- **Heap Usage (%)**, **RAM Usage (%)**, **CPU Load**.
+- **Load Average**: 1-minute, 5-minute, and 15-minute averages.
+- **Node Roles**: *Master*, *Ingest*, *Coordinating Only*, *Remote Cluster Client*, M*achine Learning*, *Cluster Manager*.
 
 ### Node Stats - General
 
-Displays general information per node retrieved from `GET /_nodes/stats`, including node ID, name, transport address, host, IP, timestamp, and custom attributes.
+This page displays general information per node retrieved from `GET /_nodes/stats`, including node ID, name, transport address, host, IP, timestamp, and custom attributes.
 
 ### Node Stats - Indices
 
-Displays tables with per-node index operation statistics. Page buttons provide access to additional subpages:
+This page displays tables with index operation statistics per node. Page buttons provide access to additional subpages:
 
 - **Documents**: Total and deleted document counts.
 - **Stored Indices**: Stored indices size.
@@ -100,11 +97,11 @@ Displays tables with per-node index operation statistics. Page buttons provide a
 
 ### Node Stats - OS / Processes
 
-Displays per-node operating system statistics (CPU usage, memory, swap) and process statistics (open file descriptors, CPU time, memory).
+This page displays per-node operating system statistics (CPU usage, memory, swap) and process statistics (open file descriptors, CPU time, memory).
 
 ### Node Stats - JVM
 
-Contains tables with per-node JVM statistics:
+This page contains tables with JVM statistics per node:
 
 - **JVM Memory Stats**: Heap used/max, non-heap used, and per-pool memory statistics.
 - **JVM Threads & Classes**: Live and peak thread counts, class loading statistics.
@@ -113,29 +110,29 @@ Contains tables with per-node JVM statistics:
 
 ### Node Stats - Thread Pool (including pages II & III)
 
-Contains per-node thread pool statistics for all thread pools, including active thread count, queue size, rejected task count, and completed task count. Statistics are spread across three pages due to the number of thread pool types.
+This page contains per-node thread pool statistics for all thread pools, including active thread count, queue size, rejected task count, and completed task count. Statistics are spread across three pages because of the number of thread pool types.
 
 ### Node Stats - File System
 
-Contains tables with per-node file system statistics:
+This page contains tables with file system statistics per node:
 
 - **File System Stats**: Aggregated available, free, and total disk space, plus I/O statistics.
 - **File System Data**: Per-path available, free, and total disk space details.
 
 ### Node Stats - Communications
 
-Contains per-node network statistics:
+This page contains per-node network statistics:
 
-- **HTTP Info**: Total opened and current open HTTP connections.
+- **HTTP Info**: Total opened and currently open HTTP connections.
 - **Transport Statistics**: Transport-layer RX/TX byte counts and message counts.
 
 ### Node Stats - Circuit Breakers
 
-Contains per-node circuit breaker statistics for all breaker types (request, fielddata, in-flight requests, accounting, parent), including limit bytes, estimated size, overhead, and trip count.
+This page contains per-node circuit breaker statistics for all breaker types (request, fielddata, in-flight requests, accounting, parent), including limit bytes, estimated size, overhead, and trip count.
 
 ### Node Stats - Other
 
-Contains tables with per-node statistics for auxiliary features:
+This page contains tables with per-node statistics for auxiliary features:
 
 - **Script Statistics**: Compilation count, cache evictions, and compilation limit triggered count.
 - **Discovery Cluster State Queue**: Committed and pending cluster state update queue statistics.
@@ -143,14 +140,14 @@ Contains tables with per-node statistics for auxiliary features:
 
 ### Security
 
-Allows configuration of connection credentials and TLS settings:
+On this page, you can configure connection credentials and TLS settings:
 
-- **User**, **Password**
+- **User**, **Password**.
 - **TLS State**: Indicates whether TLS is active (automatically detected during polling).
-- **CA Certificate Location**, **Client Certificate CRT File Location**, **Client Certificate Key File Location**
+- **CA Certificate Location**, **Client Certificate CRT File Location**, **Client Certificate Key File Location**.
 
 The **TLS Certificates** table displays certificates retrieved from the cluster via `GET /_plugins/_security/api/ssl/certs` (when mTLS is configured) or via TLS handshake inspection. It includes subject, issuer, thumbprint, validity period, and certificate type.
 
 ### Node Settings
 
-Displays a table with all node-level settings retrieved from `GET /_nodes/settings`. Each row represents a single setting and shows the node ID, setting name, and value.
+This page displays a table with all node-level settings retrieved from `GET /_nodes/settings`. Each row represents a single setting and shows the node ID, setting name, and value.

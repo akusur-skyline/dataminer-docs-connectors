@@ -7418,8 +7418,8 @@
   - name: OpenSearch Cluster Monitor
     topicUid: Connector_help_OpenSearch_Cluster_Monitor
     items:
-      - name: OpenSearch Cluster Monitor Technical
-        topicUid: Connector_help_OpenSearch_Cluster_Monitor_Technical
+    - name: OpenSearch Cluster Monitor Technical
+      topicUid: Connector_help_OpenSearch_Cluster_Monitor_Technical
 - name: OpenTelemetry
   items:
   - name: OpenTelemetry Collector
