@@ -35,4 +35,4 @@ Configure the connector with CA and client certificate paths to retrieve detaile
 ## Technical Reference
 
 > [!NOTE]
-> For detailed technical information, refer to our [Technical help page](xref:Connector_help_OpenSearch_Cluster_Monitor).
+> For detailed technical information, refer to our [Technical help page](xref:Connector_help_OpenSearch_Cluster_Monitor_Technical).
